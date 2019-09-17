@@ -1,0 +1,79 @@
+# Generated with the following on 2019-07-30T03:46:07.045451
+#
+#   openstack overcloud container image prepare --namespace=192.0.30.1:8787/rhosp13 --env-file=/home/stack/osp13_haresh/docker-images.yaml --prefix=openstack- --tag=2019-07-29-grades --set ceph_namespace=192.0.30.1:8787 --set ceph_image=rhceph --set ceph_tag=3-25
+#
+
+parameter_defaults:
+  DockerAodhApiImage: 192.0.30.1:8787/rhosp13/openstack-aodh-api:2019-07-29-grades
+  DockerAodhConfigImage: 192.0.30.1:8787/rhosp13/openstack-aodh-api:2019-07-29-grades
+  DockerAodhEvaluatorImage: 192.0.30.1:8787/rhosp13/openstack-aodh-evaluator:2019-07-29-grades
+  DockerAodhListenerImage: 192.0.30.1:8787/rhosp13/openstack-aodh-listener:2019-07-29-grades
+  DockerAodhNotifierImage: 192.0.30.1:8787/rhosp13/openstack-aodh-notifier:2019-07-29-grades
+  DockerCeilometerCentralImage: 192.0.30.1:8787/rhosp13/openstack-ceilometer-central:2019-07-29-grades
+  DockerCeilometerComputeImage: 192.0.30.1:8787/rhosp13/openstack-ceilometer-compute:2019-07-29-grades
+  DockerCeilometerConfigImage: 192.0.30.1:8787/rhosp13/openstack-ceilometer-central:2019-07-29-grades
+  DockerCeilometerNotificationImage: 192.0.30.1:8787/rhosp13/openstack-ceilometer-notification:2019-07-29-grades
+  DockerCinderApiImage: 192.0.30.1:8787/rhosp13/openstack-cinder-api:2019-07-29-grades
+  DockerCinderConfigImage: 192.0.30.1:8787/rhosp13/openstack-cinder-api:2019-07-29-grades
+  DockerCinderSchedulerImage: 192.0.30.1:8787/rhosp13/openstack-cinder-scheduler:2019-07-29-grades
+  DockerCinderVolumeImage: 192.0.30.1:8787/rhosp13/openstack-cinder-volume:2019-07-29-grades
+  DockerClustercheckConfigImage: 192.0.30.1:8787/rhosp13/openstack-mariadb:2019-07-29-grades
+  DockerClustercheckImage: 192.0.30.1:8787/rhosp13/openstack-mariadb:2019-07-29-grades
+  DockerCrondConfigImage: 192.0.30.1:8787/rhosp13/openstack-cron:2019-07-29-grades
+  DockerCrondImage: 192.0.30.1:8787/rhosp13/openstack-cron:2019-07-29-grades
+  DockerGlanceApiConfigImage: 192.0.30.1:8787/rhosp13/openstack-glance-api:2019-07-29-grades
+  DockerGlanceApiImage: 192.0.30.1:8787/rhosp13/openstack-glance-api:2019-07-29-grades
+  DockerGnocchiApiImage: 192.0.30.1:8787/rhosp13/openstack-gnocchi-api:2019-07-29-grades
+  DockerGnocchiConfigImage: 192.0.30.1:8787/rhosp13/openstack-gnocchi-api:2019-07-29-grades
+  DockerGnocchiMetricdImage: 192.0.30.1:8787/rhosp13/openstack-gnocchi-metricd:2019-07-29-grades
+  DockerGnocchiStatsdImage: 192.0.30.1:8787/rhosp13/openstack-gnocchi-statsd:2019-07-29-grades
+  DockerHAProxyConfigImage: 192.0.30.1:8787/rhosp13/openstack-haproxy:2019-07-29-grades
+  DockerHAProxyImage: 192.0.30.1:8787/rhosp13/openstack-haproxy:2019-07-29-grades
+  DockerHeatApiCfnConfigImage: 192.0.30.1:8787/rhosp13/openstack-heat-api-cfn:2019-07-29-grades
+  DockerHeatApiCfnImage: 192.0.30.1:8787/rhosp13/openstack-heat-api-cfn:2019-07-29-grades
+  DockerHeatApiConfigImage: 192.0.30.1:8787/rhosp13/openstack-heat-api:2019-07-29-grades
+  DockerHeatApiImage: 192.0.30.1:8787/rhosp13/openstack-heat-api:2019-07-29-grades
+  DockerHeatConfigImage: 192.0.30.1:8787/rhosp13/openstack-heat-api:2019-07-29-grades
+  DockerHeatEngineImage: 192.0.30.1:8787/rhosp13/openstack-heat-engine:2019-07-29-grades
+  DockerHorizonConfigImage: 192.0.30.1:8787/rhosp13/openstack-horizon:2019-07-29-grades
+  DockerHorizonImage: 192.0.30.1:8787/rhosp13/openstack-horizon:2019-07-29-grades
+  DockerInsecureRegistryAddress:
+  - 192.0.30.1:8787
+  DockerIscsidConfigImage: 192.0.30.1:8787/rhosp13/openstack-iscsid:2019-07-29-grades
+  DockerIscsidImage: 192.0.30.1:8787/rhosp13/openstack-iscsid:2019-07-29-grades
+  DockerKeystoneConfigImage: 192.0.30.1:8787/rhosp13/openstack-keystone:2019-07-29-grades
+  DockerKeystoneImage: 192.0.30.1:8787/rhosp13/openstack-keystone:2019-07-29-grades
+  DockerMemcachedConfigImage: 192.0.30.1:8787/rhosp13/openstack-memcached:2019-07-29-grades
+  DockerMemcachedImage: 192.0.30.1:8787/rhosp13/openstack-memcached:2019-07-29-grades
+  DockerMysqlClientConfigImage: 192.0.30.1:8787/rhosp13/openstack-mariadb:2019-07-29-grades
+  DockerMysqlConfigImage: 192.0.30.1:8787/rhosp13/openstack-mariadb:2019-07-29-grades
+  DockerMysqlImage: 192.0.30.1:8787/rhosp13/openstack-mariadb:2019-07-29-grades
+  DockerNeutronApiImage: 192.0.30.1:8787/rhosp13/openstack-neutron-server:2019-07-29-grades
+  DockerNeutronConfigImage: 192.0.30.1:8787/rhosp13/openstack-neutron-server:2019-07-29-grades
+  DockerNeutronDHCPImage: 192.0.30.1:8787/rhosp13/openstack-neutron-dhcp-agent:2019-07-29-grades
+  DockerNeutronL3AgentImage: 192.0.30.1:8787/rhosp13/openstack-neutron-l3-agent:2019-07-29-grades
+  DockerNeutronMetadataImage: 192.0.30.1:8787/rhosp13/openstack-neutron-metadata-agent:2019-07-29-grades
+  DockerNovaApiImage: 192.0.30.1:8787/rhosp13/openstack-nova-api:2019-07-29-grades
+  DockerNovaComputeImage: 192.0.30.1:8787/rhosp13/openstack-nova-compute:2019-07-29-grades
+  DockerNovaConductorImage: 192.0.30.1:8787/rhosp13/openstack-nova-conductor:2019-07-29-grades
+  DockerNovaConfigImage: 192.0.30.1:8787/rhosp13/openstack-nova-api:2019-07-29-grades
+  DockerNovaConsoleauthImage: 192.0.30.1:8787/rhosp13/openstack-nova-consoleauth:2019-07-29-grades
+  DockerNovaLibvirtConfigImage: 192.0.30.1:8787/rhosp13/openstack-nova-compute:2019-07-29-grades
+  DockerNovaLibvirtImage: 192.0.30.1:8787/rhosp13/openstack-nova-libvirt:2019-07-29-grades
+  DockerNovaMetadataImage: 192.0.30.1:8787/rhosp13/openstack-nova-api:2019-07-29-grades
+  DockerNovaPlacementConfigImage: 192.0.30.1:8787/rhosp13/openstack-nova-placement-api:2019-07-29-grades
+  DockerNovaPlacementImage: 192.0.30.1:8787/rhosp13/openstack-nova-placement-api:2019-07-29-grades
+  DockerNovaSchedulerImage: 192.0.30.1:8787/rhosp13/openstack-nova-scheduler:2019-07-29-grades
+  DockerNovaVncProxyImage: 192.0.30.1:8787/rhosp13/openstack-nova-novncproxy:2019-07-29-grades
+  DockerOpenvswitchImage: 192.0.30.1:8787/rhosp13/openstack-neutron-openvswitch-agent:2019-07-29-grades
+  DockerPankoApiImage: 192.0.30.1:8787/rhosp13/openstack-panko-api:2019-07-29-grades
+  DockerPankoConfigImage: 192.0.30.1:8787/rhosp13/openstack-panko-api:2019-07-29-grades
+  DockerRabbitmqConfigImage: 192.0.30.1:8787/rhosp13/openstack-rabbitmq:2019-07-29-grades
+  DockerRabbitmqImage: 192.0.30.1:8787/rhosp13/openstack-rabbitmq:2019-07-29-grades
+  DockerRedisConfigImage: 192.0.30.1:8787/rhosp13/openstack-redis:2019-07-29-grades
+  DockerRedisImage: 192.0.30.1:8787/rhosp13/openstack-redis:2019-07-29-grades
+  DockerSwiftAccountImage: 192.0.30.1:8787/rhosp13/openstack-swift-account:2019-07-29-grades
+  DockerSwiftConfigImage: 192.0.30.1:8787/rhosp13/openstack-swift-proxy-server:2019-07-29-grades
+  DockerSwiftContainerImage: 192.0.30.1:8787/rhosp13/openstack-swift-container:2019-07-29-grades
+  DockerSwiftObjectImage: 192.0.30.1:8787/rhosp13/openstack-swift-object:2019-07-29-grades
+  DockerSwiftProxyImage: 192.0.30.1:8787/rhosp13/openstack-swift-proxy-server:2019-07-29-grades
